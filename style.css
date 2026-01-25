@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #0f111a;
+    color: #ffffff;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(15,17,26,0.95);
+    z-index: 100;
+}
+
+.logo {
+    color: #ff4d5a;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 8%;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    width: 100%;
+}
+
+/* LEFT TEXT */
+.hero-text h1 {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.hero-text h1 span {
+    color: #ff4d5a;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    color: #ccc;
+    max-width: 450px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.primary-btn {
+    background: #ff4d5a;
+    color: white;
+    padding: 12px 26px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.secondary-btn {
+    border: 1px solid #ff4d5a;
+    color: white;
+    padding: 12px 26px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+/* RIGHT IMAGE CARD */
+.hero-image {
+    background: linear-gradient(135deg, #7f5cff, #5f3dc4);
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.hero-image img {
+    width: 320px;
+    border-radius: 20px;
+    object-fit: cover;
+    display: block;
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 10%;
+}
+
+.section h2 {
+    margin-bottom: 30px;
+    color: #ff4d5a;
+}
+
+.dark {
+    background: #141625;
+}
+
+.card {
+    background: #1b1e30;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.info-card, .skill-card {
+    background: #1b1e30;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0b0c14;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .hero-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+}
