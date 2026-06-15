@@ -193,6 +193,38 @@ body {
   font-size: 1.2rem;
 }
 
+/* SOCIAL BUTTONS */
+.social-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  background: #ff4d5a;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+
+.social-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255,77,90,0.3);
+}
+
+.linkedin {
+  background: #0077b5;
+}
+
+.linkedin:hover {
+  box-shadow: 0 5px 15px rgba(0,119,181,0.3);
+}
+
 /* CONTACT */
 #contact p {
   margin: 10px 0;
