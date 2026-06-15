@@ -33,6 +33,12 @@ body {
   color: #ff4d5a;
   font-size: 1.5rem;
   font-weight: bold;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  color: #7f5cff;
+  transform: scale(1.1);
 }
 
 .navbar ul {
@@ -93,7 +99,7 @@ body {
   padding: 12px 26px;
   border-radius: 30px;
   text-decoration: none;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 .primary-btn {
@@ -102,7 +108,7 @@ body {
 }
 
 .primary-btn:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
 }
 
 .secondary-btn {
@@ -112,6 +118,7 @@ body {
 
 .secondary-btn:hover {
   background: #ff4d5a;
+  transform: translateY(-4px);
 }
 
 /* PROFILE IMAGE */
@@ -125,11 +132,28 @@ body {
   width: 320px;
   border-radius: 20px;
   display: block;
+  transition: all 0.4s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
 }
 
 /* SECTIONS */
 .section {
   padding: 90px 10%;
+  animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .section h2 {
@@ -158,18 +182,24 @@ body {
 .info-card {
   padding: 25px;
   text-align: center;
+  transition: all 0.3s ease;
 }
 
 .skill-card {
   padding: 15px 20px;
   text-align: center;
   border: 1px solid rgba(255,255,255,0.05);
+  transition: all 0.3s ease;
 }
 
-.info-card:hover,
+.info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(127, 92, 255, 0.4);
+}
+
 .skill-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(255,77,90,0.2);
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(255, 77, 90, 0.4);
 }
 
 .center {
@@ -208,12 +238,12 @@ body {
   text-decoration: none;
   padding: 12px 24px;
   border-radius: 30px;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
   font-weight: 600;
 }
 
 .social-btn:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
   box-shadow: 0 5px 15px rgba(255,77,90,0.3);
 }
 
