@@ -255,10 +255,67 @@ body {
   box-shadow: 0 5px 15px rgba(0,119,181,0.3);
 }
 
-/* CONTACT */
-#contact p {
-  margin: 10px 0;
+/* CONTACT SECTION */
+.contact {
+  padding: 100px 10%;
+  text-align: center;
+  background: #0f111a;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  color: #ff4d5a;
+  margin-bottom: 15px;
+}
+
+.contact p {
+  color: #b0b0b0;
   font-size: 1.05rem;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  max-width: 700px;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 18px;
+  margin: 12px 0;
+  border: 2px solid #252836;
+  border-radius: 15px;
+  background: #171923;
+  color: white;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff4d5a;
+  box-shadow: 0 0 15px rgba(255, 77, 90, 0.4);
+  outline: none;
+}
+
+/* BUTTON */
+.contact-form button {
+  background: linear-gradient(135deg, #ff4d5a, #ff6b4a);
+  color: white;
+  border: none;
+  padding: 16px 40px;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.contact-form button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(255, 77, 90, 0.5);
 }
 
 /* FOOTER */
@@ -294,5 +351,17 @@ footer {
 
   .hero-buttons {
     justify-content: center;
+  }
+
+  .contact {
+    padding: 60px 10%;
+  }
+
+  .contact h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact-form {
+    padding: 0 15px;
   }
 }
