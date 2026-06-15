@@ -142,20 +142,10 @@
     <h2>Let's Talk</h2>
     <p>Feel free to reach out for internships, projects, or collaborations.</p>
 
-    <form action="mailto:madhankappa@gmail.com" method="post" enctype="text/plain">
-        <input type="text" name="name" placeholder="Your Name" required>
-
-        <input type="email" name="email" placeholder="Your Email" required>
-
-        <textarea name="message" rows="6" placeholder="Your Message">
-Hello Madhan, I saw your portfolio and would like to connect with you.
-        </textarea>
-
-        <button type="submit">Send Message</button>
-    </form>
-
     <div class="card center">
         <p>📧 madhankappa@gmail.com</p>
+        
+        <button type="button" onclick="showMessage()">Send Message</button>
         
         <div class="social-buttons">
             <a href="https://github.com/madhankappa" target="_blank" class="social-btn">
@@ -172,6 +162,12 @@ Hello Madhan, I saw your portfolio and would like to connect with you.
 <footer>
     <p>© 2026 Kappa Madhan Raju</p>
 </footer>
+
+<script>
+function showMessage() {
+    alert("✅ Thank you for contacting me! I'll get back to you soon.");
+}
+</script>
 
 </body>
 
